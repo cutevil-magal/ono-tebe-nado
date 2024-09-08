@@ -36,7 +36,7 @@
     border-bottom: 1px solid; /*так, ибо нижнее подчеркивание (text-decoration: underline) сильно прилипало к тексту*/
 }
 
-.header__link_active{
+.header__link_active {
     border-bottom: none;
 }
 
@@ -112,7 +112,7 @@
 
 .cover__description {
     display: flex;
-    justify-content: space-around;  
+    justify-content: space-around;
     align-items: center;
     padding: 0px 0px 51px;
 }
