@@ -5,10 +5,10 @@
 .header {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 105px;
     grid-template-areas: "header__menu header__menu header__menu header__logo . header__address header__address";
+    /*исправлю данное решение в следующих проектах, чтобы в этом ничего не слетело*/
     column-gap: 20px;
-    margin: 92px 24px 96px;
+    margin: 99px 24px 96px;
 }
 
 .header__menu {
@@ -42,7 +42,7 @@
 
 /* -- логотип --*/
 
-.header__logo {
+.header__logo-image {
     grid-area: header__logo;
 }
 
@@ -83,27 +83,27 @@
 .cover__title {
     font-size: 100px;
     font-weight: bold;
-    padding: 165px 50px 130px;
+    padding: 160px 50px 125px;
 }
-.cover__title span {
-    padding: 0px;
-    margin: 0px;
-}
+
 .aligned-text {
     display: block;
-    line-height: 1.2em;
+    line-height: 1.23em;
+    word-spacing: 5px;
 }
 
 .aligned-text_center {
     text-align: center;
+    margin: 0px 55px 0px 0px;
 }
 
 .aligned-text_right {
     text-align: right;
+    word-spacing: 8px;
 }
 
 .letter-spacing-extended {
-    letter-spacing: 30px;
+    letter-spacing: 0.3em;
 }
 
 .no-letter-spacing {
@@ -124,6 +124,7 @@
 }
 
 .bet-button {
+    margin: 0px 10px 0px 0px;
     font-size: 22px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -169,27 +170,21 @@
 .card {
     height: 100%;
     color: #FFFFFF;
-}
-
-.card_type_film {
-    background-image: url(../images/card-lot-01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+}
+
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);  
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
 }
 
 .cart__content {
@@ -211,14 +206,10 @@
     padding: 0px 40px 48px;
 }
 
-.lots__links {
-    margin: 30px 40px 0px;
-}
-
 .lots__look-more-link {
+    display: block;
+    margin: 30px 40px 0px;
     font-size: 20px;
-    text-decoration: none;
-    border-bottom: 1px solid;
 }
 
 /* ------------------------------------------ section about ------------------------------------------------- */
@@ -230,7 +221,6 @@
 .about__column {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 595px;
     justify-items: center;
     gap: 15px;
 }
@@ -257,7 +247,7 @@
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0px 0px 100px;
+    margin: 135px 0px 100px;
 }
 
 .about__text {
