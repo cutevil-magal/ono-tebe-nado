@@ -23,6 +23,7 @@ li,
 blockquote {
   margin: 0;
   padding: 0;
+  font-weight: normal;
 }
 
 a {
@@ -31,4 +32,16 @@ a {
 
 img {
   width: 100%;
+}
+
+address {
+  font-style:normal;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
 }
